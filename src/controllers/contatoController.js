@@ -18,9 +18,6 @@ function adicionarContato(request, response) {
   response.redirect("/");
 }
 
-
-
-
 module.exports = {
   exibirContatos,
   exibirNovosContato,
