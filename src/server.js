@@ -25,7 +25,7 @@ enableHotReload(app);
 
 // Rotas
 app.get("/", contatoController.exibirContatos);
-app.get("/nova-tarefa", contatoController.exibirNovosContato);
+app.get("/adicionar-novo-contato", contatoController.exibirNovosContato);
 app.post("/adicionar", contatoController.adicionarContato);
 
 // Inicie o servidor
