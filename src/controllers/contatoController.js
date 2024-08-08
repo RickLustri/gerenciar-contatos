@@ -2,7 +2,7 @@ var contatos = require("../models/contatoModel");
 
 function exibirContatos(request, response) {
   var contato = contatos.listarContatos();
-  console.log("Contatos listados:",contato)
+  console.log("Contatos listados:", contato)
   response.render("index");
 }
 
@@ -18,8 +18,4 @@ function adicionarContato(request, response) {
   response.redirect("/");
 }
 
-module.exports = {
-  exibirContatos,
-  exibirNovosContato,
-  adicionarContato
-}
+module.exports = { exibirContatos, exibirNovosContato, adicionarContato }
